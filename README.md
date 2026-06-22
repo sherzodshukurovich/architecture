@@ -2,9 +2,6 @@ Markdown (`.md`) faylga tayyor ko‘rinishda:
 
 # 🚀 Frontend Architecture, Design Patterns va System Design Roadmap
 
-> Maqsad: Junior/Middle Frontend dasturchidan Senior Frontend Architect va System Designer darajasiga chiqish.
-
----
 
 # 📍 1-Bosqich: Fundament (2 hafta)
 
