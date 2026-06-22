@@ -743,5 +743,691 @@ Enterprise Digital Platform
 * Reports
 * Microservices
 
+=============================================================================================================================================================================================
+# 📚 Computer Science Fundamentals
+
+> Ushbu bo'lim Frontend Engineer, Backend Engineer, System Designer va Solution Architect bo'lish uchun zarur bo'lgan fundamental Computer Science bilimlarini o'z ichiga oladi.
+
 ---
+
+# Nima uchun Computer Science kerak?
+
+Ko‘pchilik React, Vue yoki Node.js o‘rganib dasturchi bo‘lib ishlashni boshlaydi. Lekin katta tizimlar yaratishda framework bilimining o‘zi yetarli bo‘lmaydi.
+
+Computer Science sizga quyidagilarni tushunishga yordam beradi:
+
+* Nima uchun ma'lum algoritm tezroq ishlaydi?
+* Nima uchun ma'lumotlar bazasi sekinlashadi?
+* Nima uchun server ko‘p xotira ishlatmoqda?
+* Nima uchun katta tizimlar millionlab foydalanuvchilarga xizmat ko‘rsata oladi?
+* Nima uchun Redis yoki Kafka ishlatiladi?
+
+---
+
+# 1. DATA STRUCTURES
+
+## Data Structure nima?
+
+Data Structure — ma'lumotlarni saqlash va ularga tezkor ishlov berish usuli.
+
+Misol:
+
+```txt
+Telefon kontaktlari
+↓
+Hash Table
+
+Brauzer tarixi
+↓
+Stack
+
+Printer navbati
+↓
+Queue
+```
+
+---
+
+## Array
+
+Eng oddiy va eng ko‘p ishlatiladigan data structure.
+
+```js
+const users = [
+  "Ali",
+  "Vali",
+  "Hasan"
+];
+```
+
+### Afzalliklari
+
+* Tez o‘qiladi
+* Indeks orqali murojaat qilish O(1)
+
+### Kamchiligi
+
+* O‘rtaga element qo‘shish qimmat
+
+```txt
+[1][2][3][4]
+```
+
+---
+
+## Linked List
+
+Elementlar zanjiri.
+
+```txt
+10 → 20 → 30 → 40
+```
+
+Har bir node:
+
+```txt
+Value
+Next
+```
+
+### Afzallik
+
+* Oson qo‘shiladi
+
+### Kamchilik
+
+* Qidirish sekin
+
+---
+
+## Stack
+
+LIFO
+
+Last In First Out
+
+```txt
+3
+2
+1
+```
+
+### Operatsiyalar
+
+```txt
+Push
+Pop
+Peek
+```
+
+### Misollar
+
+* Undo / Redo
+* Browser History
+* Function Call Stack
+
+---
+
+## Queue
+
+FIFO
+
+First In First Out
+
+```txt
+1 → 2 → 3 → 4
+```
+
+### Misollar
+
+* Print Queue
+* RabbitMQ
+* Kafka
+
+---
+
+## Hash Table
+
+Key Value saqlaydi.
+
+```js
+{
+  id: 1,
+  name: "Ali"
+}
+```
+
+### Afzallik
+
+Qidirish:
+
+```txt
+O(1)
+```
+
+### Misollar
+
+* Cache
+* Redis
+* JavaScript Object
+* Map
+
+---
+
+## Tree
+
+Ierarxik struktura.
+
+```txt
+        Root
+       /    \
+      A      B
+     / \
+    C   D
+```
+
+### Turlari
+
+* Binary Tree
+* Binary Search Tree
+* AVL Tree
+* Red Black Tree
+
+### Misollar
+
+* Folder System
+* DOM Tree
+
+---
+
+## Heap
+
+Priority Queue uchun.
+
+```txt
+       100
+      /   \
+     90   80
+```
+
+### Misollar
+
+* Scheduler
+* Priority Tasks
+
+---
+
+## Graph
+
+Node va Edge.
+
+```txt
+A ---- B
+|      |
+C ---- D
+```
+
+### Misollar
+
+* Google Maps
+* Social Network
+* Network Routing
+
+---
+
+# 2. ALGORITHMS
+
+## Algorithm nima?
+
+Muammoni yechish uchun qadamlar ketma-ketligi.
+
+---
+
+## Linear Search
+
+```txt
+1 2 3 4 5 6
+```
+
+Elementlarni birma-bir tekshiradi.
+
+Murakkabligi:
+
+```txt
+O(n)
+```
+
+---
+
+## Binary Search
+
+Faqat saralangan ma'lumotlarda.
+
+```txt
+1 2 3 4 5 6 7 8
+```
+
+O‘rtadan qidiradi.
+
+Murakkabligi:
+
+```txt
+O(log n)
+```
+
+---
+
+## Sorting Algorithms
+
+### Bubble Sort
+
+```txt
+O(n²)
+```
+
+### Selection Sort
+
+```txt
+O(n²)
+```
+
+### Merge Sort
+
+```txt
+O(n log n)
+```
+
+### Quick Sort
+
+```txt
+O(n log n)
+```
+
+---
+
+## Recursion
+
+Funksiya o‘zini chaqiradi.
+
+```js
+function factorial(n){
+  if(n === 1) return 1;
+  return n * factorial(n-1);
+}
+```
+
+---
+
+## Dynamic Programming
+
+Oldingi natijalarni saqlaydi.
+
+Misollar:
+
+* Fibonacci
+* Knapsack
+* Longest Common Subsequence
+
+---
+
+## Greedy Algorithms
+
+Har bosqichda eng yaxshi qarorni tanlaydi.
+
+Misollar:
+
+* Dijkstra
+* Huffman Coding
+
+---
+
+# 3. BIG O NOTATION
+
+## Big O nima?
+
+Algoritm tezligini o‘lchash usuli.
+
+---
+
+## O(1)
+
+Constant Time
+
+```js
+arr[0]
+```
+
+Element soni muhim emas.
+
+---
+
+## O(log n)
+
+```txt
+Binary Search
+```
+
+Eng yaxshi algoritmlardan biri.
+
+---
+
+## O(n)
+
+```txt
+Linear Search
+```
+
+---
+
+## O(n log n)
+
+```txt
+Merge Sort
+Quick Sort
+```
+
+---
+
+## O(n²)
+
+```txt
+Nested Loops
+Bubble Sort
+```
+
+---
+
+## O(2ⁿ)
+
+Juda yomon.
+
+Misol:
+
+```txt
+Recursive Fibonacci
+```
+
+---
+
+# 4. MEMORY MANAGEMENT
+
+## Stack Memory
+
+Funksiyalar ishlaydi.
+
+```txt
+functionA
+functionB
+functionC
+```
+
+---
+
+## Heap Memory
+
+Objectlar saqlanadi.
+
+```js
+const user = {
+  name: "Ali"
+}
+```
+
+Heapga tushadi.
+
+---
+
+## Garbage Collection
+
+Ishlatilmayotgan objectlarni tozalaydi.
+
+JavaScript:
+
+```txt
+Mark & Sweep
+```
+
+---
+
+# 5. OPERATING SYSTEM BASICS
+
+## Process
+
+Ishlayotgan dastur.
+
+Misol:
+
+```txt
+Chrome
+VSCode
+Telegram
+```
+
+---
+
+## Thread
+
+Process ichidagi ishchi oqim.
+
+```txt
+Process
+ ├─ Thread
+ ├─ Thread
+ └─ Thread
+```
+
+---
+
+## Multithreading
+
+Bir nechta ish parallel bajariladi.
+
+---
+
+## Context Switching
+
+CPU processlarni almashtiradi.
+
+---
+
+# 6. COMPUTER NETWORKS
+
+## IP Address
+
+Qurilma manzili.
+
+Misol:
+
+```txt
+192.168.1.1
+```
+
+---
+
+## DNS
+
+Domainni IP ga aylantiradi.
+
+```txt
+google.com
+↓
+142.250.x.x
+```
+
+---
+
+## TCP
+
+Ishonchli aloqa.
+
+Misol:
+
+* HTTP
+* HTTPS
+
+---
+
+## UDP
+
+Tezroq.
+
+Misol:
+
+* Video Stream
+* Online Games
+
+---
+
+# 7. DATABASE FUNDAMENTALS
+
+## SQL
+
+Relational Database.
+
+Misollar:
+
+* PostgreSQL
+* MySQL
+
+---
+
+## NoSQL
+
+Moslashuvchan.
+
+Misollar:
+
+* MongoDB
+* Redis
+
+---
+
+## Index
+
+Database qidiruvini tezlashtiradi.
+
+---
+
+## Transactions
+
+ACID:
+
+* Atomicity
+* Consistency
+* Isolation
+* Durability
+
+---
+
+# 8. CONCURRENCY & PARALLELISM
+
+## Concurrency
+
+Bir nechta ish navbat bilan bajariladi.
+
+---
+
+## Parallelism
+
+Bir vaqtning o‘zida bajariladi.
+
+---
+
+## Race Condition
+
+Ikki thread bir xil resursga murojaat qiladi.
+
+---
+
+## Deadlock
+
+Ikki process bir-birini kutib qoladi.
+
+---
+
+# 9. DISTRIBUTED SYSTEMS BASICS
+
+## Scalability
+
+Tizimning o‘sishi.
+
+---
+
+## Horizontal Scaling
+
+```txt
+Server + Server + Server
+```
+
+---
+
+## Vertical Scaling
+
+```txt
+CPU ↑
+RAM ↑
+```
+
+---
+
+## Load Balancer
+
+Trafikni taqsimlaydi.
+
+---
+
+## Cache
+
+Tezkor xotira.
+
+Misollar:
+
+* Redis
+* Memcached
+
+---
+
+# 10. INTERVIEW PREPARATION
+
+Quyidagi savollarga javob bera olishingiz kerak:
+
+### Data Structures
+
+* Array va Linked List farqi?
+* Stack va Queue qayerda ishlatiladi?
+* Hash Table qanday ishlaydi?
+
+### Algorithms
+
+* Binary Search qanday ishlaydi?
+* Quick Sort va Merge Sort farqi?
+
+### Big O
+
+* O(1) nima?
+* O(log n) nima?
+* O(n²) qachon yuzaga keladi?
+
+### Operating System
+
+* Process va Thread farqi?
+* Context Switching nima?
+
+### Database
+
+* Index nima?
+* ACID nima?
+
+### Networking
+
+* DNS nima?
+* TCP va UDP farqi?
+
+### Distributed Systems
+
+* Cache nima?
+* Load Balancer nima?
+* Horizontal va Vertical Scaling farqi?
+
+
 
