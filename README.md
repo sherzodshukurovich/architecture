@@ -1,233 +1,439 @@
-Markdown (`.md`) faylga tayyor ko‘rinishda:
+# 🚀 Frontend Architecture, Design Patterns, System Design & Solution Architecture Roadmap
 
-# 🚀 Frontend Architecture, Design Patterns va System Design Roadmap
-
-
-# 📍 1-Bosqich: Fundament (2 hafta)
-
-## Internet qanday ishlaydi
-
-* HTTP / HTTPS
-* DNS
-* TCP/IP
-* Browser Rendering
-* Cookies
-* Session
-* JWT
-* CORS
-* REST API
-* WebSocket
-
-## Dasturlash asoslari
-
-* Clean Code
-* SOLID Principles
-* DRY
-* KISS
-* YAGNI
-* OOP
-* Functional Programming
-* Async/Await
-* Promise
-* Error Handling
-
-### Natija
-
-Frontend va Backend o‘rtasidagi barcha jarayonlarni tushunasiz.
 
 ---
 
-# 📍 2-Bosqich: Frontend Architecture (1 oy)
-
-## Arxitektura mavzulari
-
-* Folder Structure
-* Feature-Based Architecture
-* Feature-Sliced Design
-* Component Architecture
-* Routing Architecture
-* API Layer
-* State Management
-* Form Architecture
-* Authentication Flow
-* Authorization
-* Error Handling
-* Lazy Loading
-* Code Splitting
-* i18n
-* Theme System
-
-## React bo‘yicha
-
-* React Query
-* Zustand
-* Redux Toolkit
-* React Hook Form
-* Context API
-* Custom Hooks
-* Error Boundaries
-* Suspense
-
-## Amaliy loyiha
-
-Admin Panel yaratish:
-
-* Login
-* Dashboard
-* Users
-* Roles
-* CRUD
-* Filters
-* Pagination
-* Permissions
-* Notifications
-
-### Tavsiya etilgan struktura
+# 📚 Roadmap Bosqichlari
 
 ```txt
-src/
-├── app/
-├── pages/
-├── widgets/
-├── features/
-├── entities/
-└── shared/
+1. Computer Science Fundamentals
+2. Internet & Networking
+3. Programming Principles
+4. Architecture Patterns
+5. Frontend Architecture
+6. Design Patterns
+7. Backend Architecture
+8. Database Design
+9. System Design
+10. Advanced Architecture
+11. Security
+12. DevOps
+13. Cloud
+14. Distributed Systems
+15. Enterprise Architecture
+16. Real World Projects
 ```
 
 ---
 
-# 📍 3-Bosqich: Design Patterns (1 oy)
+# 1. COMPUTER SCIENCE FUNDAMENTALS
 
-## Creational Patterns
+## Data Structures
+
+* Array
+* Linked List
+* Stack
+* Queue
+* Hash Table
+* Tree
+* Graph
+* Heap
+
+## Algorithms
+
+* Sorting
+* Searching
+* Recursion
+* Dynamic Programming
+* Greedy Algorithms
+* Graph Algorithms
+
+## Big O Notation
+
+* Time Complexity
+* Space Complexity
+
+---
+
+# 2. INTERNET & NETWORKING
+
+## Internet Basics
+
+* HTTP
+* HTTPS
+* TCP/IP
+* UDP
+* DNS
+* SSL/TLS
+
+## Browser Internals
+
+* Rendering Pipeline
+* Reflow
+* Repaint
+* Event Loop
+
+## Authentication
+
+* Session
+* Cookies
+* JWT
+* OAuth 2.0
+* OpenID Connect
+
+## Communication
+
+* REST API
+* GraphQL
+* WebSocket
+* SSE
+
+---
+
+# 3. PROGRAMMING PRINCIPLES
+
+## Clean Code
+
+* Meaningful Naming
+* Functions
+* Classes
+* Error Handling
+
+## SOLID
+
+* Single Responsibility
+* Open Closed
+* Liskov Substitution
+* Interface Segregation
+* Dependency Inversion
+
+## Other Principles
+
+* DRY
+* KISS
+* YAGNI
+* Separation of Concerns
+
+---
+
+# 4. ARCHITECTURE PATTERNS
+
+## MVC (Model View Controller)
+
+```txt
+User
+ ↓
+Controller
+ ↓
+Model
+ ↓
+View
+```
+
+### O‘rganish
+
+* Laravel MVC
+* ASP.NET MVC
+* Spring MVC
+
+---
+
+## MVT (Model View Template)
+
+```txt
+User
+ ↓
+View
+ ↓
+Model
+ ↓
+Template
+```
+
+### O‘rganish
+
+* Django
+
+---
+
+## MVP (Model View Presenter)
+
+```txt
+View
+ ↕
+Presenter
+ ↕
+Model
+```
+
+### O‘rganish
+
+* Android MVP
+
+---
+
+## MVVM (Model View ViewModel)
+
+```txt
+View
+ ↕
+ViewModel
+ ↕
+Model
+```
+
+### O‘rganish
+
+* React
+* Vue
+* Angular
+
+---
+
+## Layered Architecture
+
+```txt
+Presentation
+↓
+Service
+↓
+Repository
+↓
+Database
+```
+
+---
+
+## Clean Architecture
+
+```txt
+Presentation
+↓
+Application
+↓
+Domain
+↓
+Infrastructure
+```
+
+---
+
+## Hexagonal Architecture
+
+```txt
+Ports
+↓
+Application Core
+↓
+Adapters
+```
+
+---
+
+## Onion Architecture
+
+```txt
+Infrastructure
+↓
+Application
+↓
+Domain
+```
+
+---
+
+# 5. FRONTEND ARCHITECTURE
+
+## React Core
+
+* Hooks
+* Context API
+* Suspense
+* Error Boundary
+
+## State Management
+
+* Zustand
+* Redux Toolkit
+* React Query
+* TanStack Query
+
+## Project Structure
+
+### Feature-Sliced Design
+
+```txt
+src/
+├── app
+├── pages
+├── widgets
+├── features
+├── entities
+└── shared
+```
+
+## Frontend Patterns
+
+* Container Pattern
+* Presentational Pattern
+* Compound Components
+* Custom Hooks
+* Service Layer
+
+## Routing
+
+* Nested Routes
+* Protected Routes
+* Lazy Routes
+
+## Forms
+
+* React Hook Form
+* Zod
+* Yup
+
+## Performance
+
+* Memoization
+* Virtualization
+* Code Splitting
+* Lazy Loading
+
+---
+
+# 6. DESIGN PATTERNS
+
+## Creational
 
 * Singleton
 * Factory Method
 * Abstract Factory
 * Builder
 
-## Structural Patterns
+## Structural
 
 * Adapter
-* Facade
-* Proxy
 * Decorator
+* Proxy
+* Facade
 
-## Behavioral Patterns
+## Behavioral
 
-* Strategy
 * Observer
-* Command
+* Strategy
 * State
+* Command
 
-## Frontendda eng ko‘p ishlatiladiganlari
+## Enterprise Patterns
 
-### Adapter
-
-API response formatlash.
-
-### Strategy
-
-Validation va filtering logikasi.
-
-### Observer
-
-State Management.
-
-### Factory
-
-Dynamic Component yaratish.
-
-### Facade
-
-Murakkab servislarni soddalashtirish.
-
-### Repository
-
-API Layer yaratish.
+* Repository
+* Service
+* Unit Of Work
+* Dependency Injection
 
 ---
 
-# 📍 4-Bosqich: Database Design (3 hafta)
-
-## Relational Database
-
-* PostgreSQL
-* MySQL
-
-## Mavzular
-
-* Database Modeling
-* ER Diagram
-* Normalization
-* Foreign Key
-* Indexes
-* Transactions
-* ACID
-* Query Optimization
-* Partitioning
-* Replication
-* Backup
-
-## Amaliy mashqlar
-
-Quyidagilar uchun database yarating:
-
-* E-Commerce
-* Hospital
-* HR System
-* Document Management
-* Taxi Service
-
----
-
-# 📍 5-Bosqich: Backend Architecture (1 oy)
+# 7. BACKEND ARCHITECTURE
 
 ## API Design
 
-* REST API
+* REST
 * GraphQL
-* API Versioning
+* gRPC
 
 ## Authentication
 
 * JWT
-* Refresh Token
+* Refresh Tokens
 * OAuth
 
 ## Authorization
 
 * RBAC
-* Permission Management
+* ABAC
 
-## Qo‘shimcha
+## Backend Patterns
 
-* Background Jobs
-* Notifications
-* WebSocket
-* File Upload
-* Cron Jobs
-
----
-
-# 📍 6-Bosqich: System Design Basics (1.5 oy)
-
-## Architecture Types
-
-### Monolith
-
-Barcha servislar bitta tizim ichida.
-
-### Microservices
-
-Servislar mustaqil ishlaydi.
-
-### Event Driven Architecture
-
-Eventlar orqali aloqa.
+* Service Layer
+* Repository Layer
+* CQRS
+* Event Sourcing
 
 ---
 
-## Asosiy komponentlar
+# 8. DATABASE DESIGN
+
+## SQL
+
+* PostgreSQL
+* MySQL
+
+## Database Concepts
+
+* ER Diagram
+* Normalization
+* Denormalization
+* Indexes
+* Transactions
+
+## Scaling
+
+* Replication
+* Sharding
+* Partitioning
+
+## NoSQL
+
+* MongoDB
+* Redis
+* Cassandra
+
+---
+
+# 9. SYSTEM DESIGN
+
+## Monolith
+
+```txt
+Frontend
+ ↓
+Backend
+ ↓
+Database
+```
+
+## Modular Monolith
+
+```txt
+Modules
+ ├─ User
+ ├─ Orders
+ ├─ Products
+```
+
+## Microservices
+
+```txt
+API Gateway
+ ↓
+Services
+ ↓
+Databases
+```
+
+## Event Driven
+
+```txt
+Producer
+ ↓
+Queue
+ ↓
+Consumer
+```
+
+---
+
+## System Components
 
 ### Load Balancer
 
@@ -238,24 +444,24 @@ Eventlar orqali aloqa.
 
 * Redis
 
-### Message Queue
+### Queue
 
 * RabbitMQ
 * Kafka
 
-### Database
+### Search
 
-* PostgreSQL
+* Elasticsearch
 
 ### Storage
 
-* S3
 * MinIO
+* S3
 
 ### Monitoring
 
-* Grafana
 * Prometheus
+* Grafana
 
 ### Logging
 
@@ -263,49 +469,59 @@ Eventlar orqali aloqa.
 
 ---
 
-# 📍 7-Bosqich: Advanced Frontend Architecture (1 oy)
+# 10. ADVANCED FRONTEND ARCHITECTURE
 
-## Frontend Scale
+## Rendering Strategies
 
-* Micro Frontend
+* CSR
+* SSR
+* SSG
+* ISR
+
+## Micro Frontend
+
 * Module Federation
-* Monorepo
+
+## Monorepo
+
 * Nx
 * Turborepo
 
-## Design System
+## Design Systems
 
 * Storybook
 * Component Library
 
 ## Testing
 
-* Unit Testing
-* Integration Testing
-* E2E Testing
-
-### Tools
+### Unit
 
 * Vitest
 * Jest
+
+### Integration
+
+* React Testing Library
+
+### E2E
+
 * Playwright
 * Cypress
 
 ---
 
-# 📍 8-Bosqich: Security (3 hafta)
+# 11. SECURITY
 
-## Web Security
+## Frontend Security
 
 * XSS
 * CSRF
+* CSP
+
+## Backend Security
+
 * SQL Injection
-* Clickjacking
-
-## API Security
-
 * JWT Security
-* Refresh Token Rotation
 * Rate Limiting
 
 ## Infrastructure Security
@@ -316,165 +532,216 @@ Eventlar orqali aloqa.
 
 ---
 
-# 📍 9-Bosqich: DevOps Basics (1 oy)
+# 12. DEVOPS
 
 ## Linux
 
-* Filesystem
+* Bash
 * Permissions
 * Networking
 
-## Docker
+## Containers
 
-* Dockerfile
+* Docker
 * Docker Compose
 
 ## CI/CD
 
 * GitHub Actions
-* GitLab CI/CD
+* GitLab CI
 
 ## Deployment
 
 * Nginx
 * Reverse Proxy
 
+---
+
+# 13. CLOUD
+
+## AWS
+
+* EC2
+* S3
+* RDS
+* Lambda
+
+## Azure
+
+* App Service
+* Storage
+
+## Google Cloud
+
+* Cloud Run
+* Compute Engine
+
+---
+
+# 14. DISTRIBUTED SYSTEMS
+
+## Concepts
+
+* CAP Theorem
+* Consistency
+* Availability
+* Partition Tolerance
+
+## Patterns
+
+* Saga Pattern
+* Circuit Breaker
+* Retry Pattern
+* Bulkhead Pattern
+
+---
+
+# 15. ENTERPRISE ARCHITECTURE
+
+## Domain Driven Design (DDD)
+
+### Strategic Design
+
+* Bounded Context
+* Context Mapping
+
+### Tactical Design
+
+* Entity
+* Value Object
+* Aggregate
+* Domain Service
+
+## CQRS
+
+```txt
+Write Model
+↓
+Command
+↓
+Database
+
+Read Model
+↓
+Query
+↓
+Cache
+```
+
+## Event Sourcing
+
+```txt
+Events
+ ↓
+Event Store
+ ↓
+State
+```
+
+---
+
+# 16. REAL WORLD SYSTEM DESIGN PROJECTS
+
+## Beginner
+
+* Todo App
+* Blog Platform
+* CRM
+
+## Intermediate
+
+* HR System
+* Hospital System
+* E-Learning Platform
+* Document Management System
+
+## Advanced
+
+* Telegram Clone
+* YouTube Clone
+* Instagram Clone
+* Payme
+* Click
+* Uzum Market
+* E-Government Platform
+
+---
+
+# 📖 TAVSIYA ETILADIGAN KITOBLAR
+
+## Architecture
+
+* Clean Architecture
+* The Pragmatic Programmer
+* Refactoring
+
+## Design Patterns
+
+* Head First Design Patterns
+* Gang Of Four
+
+## System Design
+
+* System Design Interview Vol 1
+* System Design Interview Vol 2
+
+## Distributed Systems
+
+* Designing Data Intensive Applications
+
+## DDD
+
+* Domain Driven Design
+* Implementing Domain Driven Design
+
+---
+
+# 🎯 FINAL PROJECT
+
+Enterprise Digital Platform
+
+## Frontend
+
+* React
+* TypeScript
+* Feature Sliced Design
+* React Query
+* Zustand
+
+## Backend
+
+* NestJS yoki Spring Boot
+
+## Database
+
+* PostgreSQL
+* Redis
+
+## Infrastructure
+
+* Docker
+* Kubernetes
+
+## Messaging
+
+* RabbitMQ yoki Kafka
+
 ## Monitoring
 
 * Grafana
 * Prometheus
 
----
-
-# 📍 10-Bosqich: Real System Design (2 oy)
-
-Har bir loyiha uchun quyidagilarni ishlab chiqing:
-
-1. Requirements
-2. Functional Requirements
-3. Non-Functional Requirements
-4. Database Design
-5. API Design
-6. Frontend Architecture
-7. Backend Architecture
-8. Caching Strategy
-9. Queue Strategy
-10. Security
-11. Scaling
-12. Monitoring
-
----
-
-# 🏆 Case Studies
-
-## Beginner
-
-* Blog Platform
-* Task Manager
-* CRM
-
-## Intermediate
-
-* HR Platform
-* Hospital System
-* Document Management System
-
-## Advanced
-
-* Telegram
-* YouTube
-* Instagram
-* Uzum Market
-* Click
-* Payme
-
----
-
-# 📚 Tavsiya etilgan kitoblar
-
-## Clean Code
-
-Robert C. Martin
-
-## Clean Architecture
-
-Robert C. Martin
-
-## Head First Design Patterns
-
-Eric Freeman
-
-## System Design Interview
-
-Alex Xu
-
-## Designing Data Intensive Applications
-
-Martin Kleppmann
-
-## Refactoring
-
-Martin Fowler
-
----
-
-# 🎯 Yakuniy Maqsad
-
-Quyidagi ko‘nikmalarga ega bo‘lish:
-
-* Senior Frontend Developer
-* Frontend Architect
-* System Designer
-* Technical Lead
-* Solution Architect
-
----
-
-# ⏰ Kunlik Reja
-
-## Har kuni 2 soat
-
-### 30 daqiqa
-
-Nazariya.
-
-### 45 daqiqa
-
-Kod yozish.
-
-### 30 daqiqa
-
-Diagramma chizish.
-
-### 15 daqiqa
-
-Konspekt yozish.
-
----
-
-# 🔥 Final Project
-
-Enterprise darajadagi Document Management System:
+## Features
 
 * Authentication
 * Authorization
-* Users
-* Roles
-* Permissions
-* Documents
-* Templates
-* Version Control
+* Audit Logs
 * Notifications
 * Search
-* Audit Logs
 * Dashboard
 * File Storage
+* Reports
 * Microservices
-* Redis Cache
-* RabbitMQ
-* Docker
-* CI/CD
 
-Bu loyihani yakunlasangiz Frontend Architecture, Design Patterns, Backend Architecture va System Design bo‘yicha kuchli amaliy tajribaga ega bo‘lasiz.
+---
 
-Shuni GitHub repository uchun `ROADMAP.md` sifatida saqlasangiz, 8–10 oylik professional o‘quv rejangiz tayyor bo‘ladi.
